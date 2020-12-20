@@ -5,7 +5,7 @@ float fader2_volt;
 
 
 int led[5] = {5,6,9,10,11};
-int lumen =  5; /* fadeAmount = 3;     // how bright the LED is , how many points to fade the LED by */
+int lumen =  5; // how bright the LED is , how many points to fade the LED by */
 
 
 void setup(){
@@ -67,20 +67,3 @@ void loop(){
     analogWrite(led[4], lumen);
   }
 }
-
-/*
-// the loop routine runs over and over again forever:
-void loop() {
-  // set the brightness of pin 9:
-  analogWrite(led, brightness);
-
-  // change the brightness for next time through the loop:
-  brightness = brightness + fadeAmount;
-
-  // reverse the direction of the fading at the ends of the fade:
-  if (brightness <= 0 || brightness >= 255) {
-    fadeAmount = -fadeAmount;
-  }
-  // wait for 30 milliseconds to see the dimming effect
-  delay(30);
-}*/
